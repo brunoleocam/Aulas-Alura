@@ -15,3 +15,4 @@ $contasCorrentes = [
 foreach ($contasCorrentes as $cpf => $conta) {
     echo $cpf." ".$conta['titular'].PHP_EOL;
 }
+?>
