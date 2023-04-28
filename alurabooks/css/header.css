@@ -1,3 +1,5 @@
+/* Mobile */
+
 .cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
@@ -5,6 +7,14 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../img/Menu\ Aberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
 }
 
 .cabecalho {
@@ -52,8 +62,4 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
-}
-
-.container__botao {
-    display: none;
 }
